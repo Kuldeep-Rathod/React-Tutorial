@@ -9,9 +9,20 @@ function App() {
 
   return (
     <>
-      <Card name="Kuldeep"/>
-      <Card name="shailesh"/>
-      <Card name="rahul"/>
+      <div className='flex justify-center gap-x-10 items-center '>
+        <Card 
+        name="Kuldeep" 
+        surname="Kuldeep Rathod"
+        />
+        <Card 
+        name="shailesh"
+        surname="Shailesh Jadav"
+        />
+        <Card 
+        name="rahul"
+        surname="Rahul Chauhan"
+        />
+      </div>
     </>
   )
 }
