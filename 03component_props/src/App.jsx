@@ -24,7 +24,7 @@ function App() {
             surname="Kuldeep Rathod"
           />
           <Card
-            name="shailesh"
+            name="Shailesh"
             surname="Shailesh Jadav"
           />
           <Card
