@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { InputBox } from './components'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
+import img from './assets/bg.jpg'
 // import './App.css'
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
     <div
       className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat bg-slate-700"
       style={{
-        backgroundImage: `url('https://www.pexels.com/photo/gold-bars-366551/')`,
+        background: `url(${img})`,
       }}
     >
       <div className="w-full">
@@ -45,7 +46,7 @@ function App() {
                 label="From"
                 amount={amount}
                 currencyOptions={options}
-                onCurrencyChange={(currency) => setAmount(amount)}
+                onCurrencyChange={(currency) => setAmount(currency)}
                 selectCurrency={from}
                 onAmountChange={(amount) => setAmount(amount)}
               />
